@@ -23,7 +23,7 @@ router.post("/sign-up", async (req, res) => {
     req.body.password = hashedPassword;
 
     const user = await User.create(req.body);
-     res.send(`Form submission accepted!  Welcome ${user.username}!`);
+    res.send(`Form submission accepted!  Welcome ${user.username}!`);
 });
   
 router.post("/sign-in", async (req, res) => {
